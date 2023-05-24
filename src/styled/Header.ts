@@ -11,8 +11,9 @@ export const HeaderWrapper = styled.div`
   position: fixed;
   top: 0;
   z-index: 4;
-  margin-top: 2rem;
-  font-weight: 600;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 14px;
   @media (max-width: 768px) {
     font-size: 13px;
     margin-top: .5rem;
@@ -49,7 +50,7 @@ export const NavButton = styled(NavLink)`
     background-color: rgba(194, 194, 194, 0.23);
     border: 1px solid rgba(82, 82, 82, 0.56);
     border-radius: 24px;
-    padding: 3px 10px;
+    padding: 3px 7px;
   }
 
   &:first-child {

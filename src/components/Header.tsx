@@ -8,7 +8,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if(window.pageYOffset > 100) {
+            if(window.pageYOffset > 40) {
                 setBlur("blur(10px) saturate(1%)" )
                 setBackgroundColor("rgba(0, 56, 36, 0.70)")
             } else{
@@ -29,7 +29,7 @@ const Header = () => {
             <HeaderNav blur={blur} backgroundColor ={backgroundColor}>
                 <NavButton to="/">
                      <span>Home</span>
-                    <p>/</p>
+                     <p>/</p>
                 </NavButton>
                     <NavButton to="/about">About</NavButton>
                 <NavButton>Skills</NavButton>

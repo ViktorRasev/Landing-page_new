@@ -1,4 +1,9 @@
 import styled from "styled-components";
+
+type HomeProps = {
+    cardColor: string
+}
+
 export const Grid = styled.div`
   width: 90%;
   margin: 0 auto;
@@ -8,6 +13,12 @@ export const Grid = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 100%;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
 `;
 
 // DESKTOP
@@ -20,17 +31,17 @@ export const Image = styled.img`
   transition: all 0.5s ease-in-out;
 `;
 
-export const Card = styled.div`
+export const Card = styled.div<HomeProps>`
   border-radius: 24px;
   overflow: hidden;
   height: 80%;
-  background: #55399d;
+  background: ${({cardColor}) => cardColor};
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: translateY(-10px);
     ${Image} {
       transition: all 0.2s ease-in-out;
-      top: 30%;
+      top: 25%;
     }
   }
 `;
@@ -46,8 +57,8 @@ export const ImageMobile = styled.img`
   transition: all 0.5s ease-in-out;
 `;
 
-export const CardMobile = styled.div`
-  background: #a84a29;
+export const CardMobile = styled.div<HomeProps>`
+  background: ${({cardColor}) => cardColor};
   border-radius: 24px;
   overflow: hidden;
   height: 80%;
@@ -56,7 +67,7 @@ export const CardMobile = styled.div`
     transform: translateY(-10px);
     ${ImageMobile} {
       transition: all 0.2s ease-in-out;
-      top: 30%;
+      top: 25%;
     }
   }
 `;
