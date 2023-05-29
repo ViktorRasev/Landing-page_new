@@ -2,7 +2,6 @@ import { AboutWrapper, Paragraph, CvButton } from "../styled/About";
 import DownloadIcon from '@mui/icons-material/Download';
 import CV from "../assets/Viktor_Rašev_sk_CV.pdf"
 
-// <Link to="/files/myfile.pdf" target="_blank" download>Download</Link>
 
 const About = () => {
   return (

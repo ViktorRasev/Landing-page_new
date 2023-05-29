@@ -22,8 +22,6 @@ const Header = () => {
         }
     })
 
-
-
     return (
         <HeaderWrapper>
             <HeaderNav blur={blur} backgroundColor ={backgroundColor}>

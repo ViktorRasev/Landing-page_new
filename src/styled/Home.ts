@@ -5,6 +5,7 @@ type HomeProps = {
 }
 
 export const Grid = styled.div`
+  font-family: "Cairo", sans-serif;
   width: 90%;
   margin: 0 auto;
   display: grid;
@@ -26,10 +27,41 @@ export const Image = styled.img`
   width: 100%;
   position: relative;
   left: 5%;
-  top: 20%;
+  top: 10%;
   z-index: 3;
   transition: all 0.5s ease-in-out;
 `;
+
+
+// ICONS
+export const IconWrapper = styled.div`
+position: absolute;
+
+  left: -200%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  >* {
+    &:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  
+`
+export const CardTitle = styled.div`
+
+  margin-top: 1rem;
+ position: relative;
+`
+
+
+export const Icon = styled.img`
+  width: 7%;
+  background-color: rgba(33, 33, 33, 0.74);
+  padding: 10px;
+  
+
+`
 
 export const Card = styled.div<HomeProps>`
   border-radius: 24px;
@@ -41,7 +73,10 @@ export const Card = styled.div<HomeProps>`
     transform: translateY(-10px);
     ${Image} {
       transition: all 0.2s ease-in-out;
-      top: 25%;
+      top: 15%;
+    }
+    ${IconWrapper} {
+      left: 0;
     }
   }
 `;
@@ -71,3 +106,4 @@ export const CardMobile = styled.div<HomeProps>`
     }
   }
 `;
+
