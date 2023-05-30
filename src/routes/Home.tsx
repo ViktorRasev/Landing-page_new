@@ -1,4 +1,4 @@
-import {Grid, Card, Image, CardMobile, ImageMobile, Icon, IconWrapper, CardTitle} from "../styled/Home.ts"
+import { Grid, Card, Image, CardMobile, ImageMobile, Icon, IconWrapper, CardTitle} from "../styled/Home.ts"
 import MainTitle from "../components/MainTitle.tsx";
 import {projectData} from "../assets/ProjectsData.ts"
 
@@ -7,14 +7,19 @@ import {projectData} from "../assets/ProjectsData.ts"
 
 const Projects = () => {
 
+    const handleClick = () => {
+        console.log("HELLO")
+    }
+
+
     return (
         <>
             <MainTitle />
             {
             projectData.map((item, idx) => {
                 return (
-                    <Grid key={idx}>
-                        <Card cardColor={item.cardColor}>
+                      <Grid key={idx} index={idx}>
+                        <Card href={item.projectUrl} target="_blank">
                             <CardTitle>
                                 <IconWrapper>
                                 {item.usedInProject.map((icon) => {
@@ -23,10 +28,10 @@ const Projects = () => {
                                 </IconWrapper>
                                 <h2>{item.name}</h2>
                             </CardTitle>
-                            <Image src={item.imageDesktop} alt=""/>
+                            <Image src={item.imageDesktop} alt={`Image of ${item.name} for desktop layout`}/>
                         </Card>
-                        <CardMobile cardColor={item.cardColor}>
-                            <ImageMobile src={item.imageMobile} alt=""/>
+                        <CardMobile href={item.projectUrl} target="_blank">
+                            <ImageMobile src={item.imageMobile} alt={`Image of ${item.name} for mobile layout`}/>
                         </CardMobile>
                     </Grid>
                 )

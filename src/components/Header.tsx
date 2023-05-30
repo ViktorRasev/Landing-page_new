@@ -30,8 +30,6 @@ const Header = () => {
                      <p>/</p>
                 </NavButton>
                     <NavButton to="/about">About</NavButton>
-                <NavButton>Skills</NavButton>
-                <NavButton>Contact</NavButton>
             </HeaderNav>
         </HeaderWrapper>
     )

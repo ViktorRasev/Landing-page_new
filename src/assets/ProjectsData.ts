@@ -23,8 +23,8 @@ type ProjectTypes = {
     imageDesktop: string,
     imageMobile: string,
     usedInProject: string[],
+    projectUrl: string,
     id: string,
-    cardColor: string
 }
 
 export const projectData: ProjectTypes[]= [
@@ -33,28 +33,28 @@ export const projectData: ProjectTypes[]= [
         imageDesktop: "https://i.imgur.com/kK4VWIw.png",
         imageMobile: "https://i.imgur.com/O1GM1eI.png",
         usedInProject:[htmltIcon, cssIcon, javascriptIcon, reactIcon, firebaseIcon, bootstrapIcon],
+        projectUrl: "https://cookbook-client-nine.vercel.app/",
         id: "1",
-        cardColor: "hsl(171.58deg 44.88% 75.1%)"
     }, {
         name: "Quiz",
         imageDesktop: "https://i.imgur.com/dz3M3zn.png",
         imageMobile: "https://i.imgur.com/yJic1Ah.png",
         usedInProject: [htmltIcon, cssIcon, javascriptIcon, vueIcon],
+        projectUrl: "https://spontaneous-heliotrope-b7f4af.netlify.app/",
         id: "2",
-        cardColor: "hsla(22, 62%, 76%, 1)"
     }, {
         name: "Simple Eshop",
         imageDesktop: "https://i.imgur.com/EH0mGho.png",
         imageMobile: "https://i.imgur.com/wRKBAMU.png",
         usedInProject: [htmltIcon, cssIcon, javascriptIcon],
+        projectUrl: "https://viktorrasev-simple-eshop.netlify.app/",
         id: "3",
-        cardColor: "hsla(0, 0%, 100%, 1)"
     }, {
         name: "Todo List",
         imageDesktop: "https://i.imgur.com/PJoPycg.png",
         imageMobile: "https://i.imgur.com/Nk0BP34.png",
         usedInProject: [htmltIcon, cssIcon, javascriptIcon],
+        projectUrl: "https://viktorrasev-todolist.netlify.app/",
         id: "4",
-        cardColor: "hsla(284, 61%, 74%, 1)"
     },
 ]

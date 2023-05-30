@@ -7,13 +7,13 @@ import About from "./routes/About";
 
 function App() {
     return (
-        <div className="app">
+        <>
             <Header />
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
             </Routes>
-        </div>
+        </>
 
     )
 }

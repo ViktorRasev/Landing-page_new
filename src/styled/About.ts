@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import {Link} from "react-router-dom"
+
 const moveAnimation = keyframes`
   0% {
     transform: translateX(0); 
@@ -19,12 +20,21 @@ const moveAnimation = keyframes`
   }
 `;
 
+
+
+
+export const AboutPage = styled.div`
+  height: 100%;
+  background-image: linear-gradient(to bottom, #2b453d, #344d45, #3c554d, #455e55, #4e665d);
+  padding-top: 10rem;
+`
+
 export const AboutWrapper = styled.div`
+  min-height: 100vh;
   text-align: center;
-  margin: 7rem auto;
-  padding-bottom: 5rem;
+  margin: 0 auto;
+  padding-bottom:5rem;
   width: 70%;
-  color: white;
   font-family: "Cairo", sans-serif;
 `;
 
@@ -56,6 +66,7 @@ export const CvButton = styled(Link)`
 `;
 
 export const Paragraph = styled.p`
+  
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -75,3 +86,6 @@ export const Paragraph = styled.p`
     font-size: 1rem;
   }
 `;
+
+
+
