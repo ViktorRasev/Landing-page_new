@@ -7,10 +7,6 @@ import {projectData} from "../assets/ProjectsData.ts"
 
 const Projects = () => {
 
-    const handleClick = () => {
-        console.log("HELLO")
-    }
-
 
     return (
         <>
