@@ -5,21 +5,19 @@ import {projectData} from "../assets/ProjectsData.ts"
 
 
 
-const Projects = () => {
-
-
+const Home = () => {
     return (
         <>
             <MainTitle />
             {
             projectData.map((item, idx) => {
                 return (
-                      <Grid key={idx} index={idx}>
+                      <Grid key={idx} rowdirection={idx % 2 === 0 ? "row" : "row-reverse"}>
                         <Card href={item.projectUrl} target="_blank">
                             <CardTitle>
                                 <IconWrapper>
-                                {item.usedInProject.map((icon) => {
-                                    return <Icon src={icon} alt=""/>
+                                {item.usedInProject.map((icon, idx) => {
+                                    return <Icon key={idx} src={icon} alt=""/>
                                 })}
                                 </IconWrapper>
                                 <h2>{item.name}</h2>
@@ -36,4 +34,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default Home

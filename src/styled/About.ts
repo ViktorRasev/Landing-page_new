@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import {Link} from "react-router-dom"
+import { TypeAnimation } from "react-type-animation";
 
 const moveAnimation = keyframes`
   0% {
@@ -31,11 +32,14 @@ export const AboutPage = styled.div`
 
 export const AboutWrapper = styled.div`
   min-height: 100vh;
-  text-align: center;
+  //text-align: center;
   margin: 0 auto;
   padding-bottom:5rem;
   width: 70%;
   font-family: "Cairo", sans-serif;
+  @media(max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const CvButton = styled(Link)`
@@ -65,7 +69,7 @@ export const CvButton = styled(Link)`
   }
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled(TypeAnimation)`
   
   font-size: 1.5rem;
   display: flex;

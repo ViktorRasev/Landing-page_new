@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom"
 
 type NavProps = {
     blur: string,
-    backgroundColor :string
+    background :string
 }
 
 export const HeaderWrapper = styled.div`
@@ -29,7 +29,7 @@ export const HeaderNav = styled.div<NavProps>`
   align-items: center;
   max-width: 310px;
   height: 3rem;
-  background: ${({backgroundColor}) => backgroundColor};
+  background: ${({background}) => background};
   backdrop-filter: ${({blur}) => blur};
   transition: backdrop-filter 0.3s ease-in-out;
   border-radius: 24px;

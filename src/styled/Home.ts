@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 type HomeProps = {
-  index?: number;
+  rowdirection?: string;
 };
-
 
 export const Grid = styled.div<HomeProps>`
   font-family: "Cairo", sans-serif;
@@ -11,8 +10,7 @@ export const Grid = styled.div<HomeProps>`
   margin: 3rem auto;
   display: flex;
   gap: 3rem;
-  flex-direction: ${({ index }) => (index % 2 === 0 ? "row" : "row-reverse")};
-
+  flex-direction: ${({ rowdirection }) => rowdirection};
   @media (max-width: 768px) {
     > * {
       margin-bottom: 3rem;
@@ -60,7 +58,21 @@ export const Icon = styled.img`
 export const Card = styled.a<HomeProps>`
   border-radius: 24px;
   overflow: hidden;
-  background-image: linear-gradient(to right top, #3ea87c, #4ca977, #59aa71, #65ab6d, #70ac68, #69af72, #62b17d, #5cb387, #47b6a1, #40b6b8, #4fb5c9, #6ab3d3);
+  background-image: linear-gradient(
+    to right top,
+    #3ea87c,
+    #4ca977,
+    #59aa71,
+    #65ab6d,
+    #70ac68,
+    #69af72,
+    #62b17d,
+    #5cb387,
+    #47b6a1,
+    #40b6b8,
+    #4fb5c9,
+    #6ab3d3
+  );
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: translateY(-10px);
@@ -86,7 +98,21 @@ export const ImageMobile = styled.img`
 `;
 
 export const CardMobile = styled.a<HomeProps>`
-  background-image: linear-gradient(to left bottom, #3ea87c, #4ca977, #59aa71, #65ab6d, #70ac68, #69af72, #62b17d, #5cb387, #47b6a1, #40b6b8, #4fb5c9, #6ab3d3);
+  background-image: linear-gradient(
+    to left bottom,
+    #3ea87c,
+    #4ca977,
+    #59aa71,
+    #65ab6d,
+    #70ac68,
+    #69af72,
+    #62b17d,
+    #5cb387,
+    #47b6a1,
+    #40b6b8,
+    #4fb5c9,
+    #6ab3d3
+  );
   border-radius: 24px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
