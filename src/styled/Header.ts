@@ -1,10 +1,14 @@
 import styled from "styled-components";
 import {NavLink} from "react-router-dom"
 
+
+
 type NavProps = {
     blur: string,
     background :string
 }
+
+
 
 export const HeaderWrapper = styled.div`
   width: 100%;
@@ -27,7 +31,7 @@ export const HeaderNav = styled.div<NavProps>`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  max-width: 310px;
+  max-width: 250px;
   height: 3rem;
   background: ${({background}) => background};
   backdrop-filter: ${({blur}) => blur};
@@ -45,12 +49,14 @@ export const NavButton = styled(NavLink)`
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+  padding: 7px 15px;
 
   &.active {
-    background-color: rgba(194, 194, 194, 0.23);
-    border: 1px solid rgba(82, 82, 82, 0.56);
-    border-radius: 24px;
-    padding: 3px 7px;
+    //background-color: rgba(194, 194, 194, 0.23);
+    //border: 1px solid rgba(82, 82, 82, 0.56);
+    //border-radius: 24px;
+    //padding: 3px 12px;
+    color: #22bcb9;
   }
 
   &:first-child {
@@ -59,11 +65,13 @@ export const NavButton = styled(NavLink)`
     justify-content: space-between;
     align-items: center;
     gap: 4px;
+   
     
     p {
+
       font-size: 10px;
       padding: 0 7px;
-      color: rgba(245, 245, 245, 0.82);
+      //color: rgba(245, 245, 245, 0.82);
       font-weight: 700;
       border: 1.3px solid rgba(255, 255, 255, 0.48);
       border-radius: 3px;

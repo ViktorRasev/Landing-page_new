@@ -1,8 +1,10 @@
 import {HeaderWrapper, HeaderNav, NavButton} from "../styled/Header";
 import {useState, useEffect} from "react";
+
 const Header = () => {
     const [blur, setBlur] = useState<string>("none")
     const [background, setBackground] = useState<string>("none")
+
 
 
 
@@ -22,14 +24,18 @@ const Header = () => {
         }
     })
 
+    const handleNavLinkClick = () => {
+        window.scrollTo(0, 0)
+    }
+
     return (
         <HeaderWrapper>
-            <HeaderNav blur={blur} background ={background}>
-                <NavButton to="/">
+            <HeaderNav blur={blur} background={background}>
+                <NavButton to="/" onClick={handleNavLinkClick}>
                      <span>Home</span>
                      <p>/</p>
                 </NavButton>
-                    <NavButton to="/about">About</NavButton>
+                    <NavButton to="/about" onClick={handleNavLinkClick}>About</NavButton>
             </HeaderNav>
         </HeaderWrapper>
     )
