@@ -1,17 +1,22 @@
-import bootstrapIcon from "./icons/bootstrap-4-logo-svgrepo-com.svg"
-import cssIcon from "./icons/css-3-svgrepo-com.svg"
-import firebaseIcon from "./icons/firebase-svgrepo-com.svg"
-// import gitIcon from "./icons/git-svgrepo-com.svg"
-// import githubIcon from "./icons/github-svgrepo-com.svg"
-// import emailtIcon from "./icons/google-gmail-svgrepo-com.svg"
+
+
 import htmltIcon from "./icons/html-5-svgrepo-com.svg"
+import cssIcon from "./icons/css-3-svgrepo-com.svg"
 import javascriptIcon from "./icons/javascript-svgrepo-com.svg"
-// import linkedinIcon from "./icons/linkedin-svgrepo-com.svg"
+import gitIcon from "./icons/git-svgrepo-com.svg"
+import sassIcon from "./icons/sass-svgrepo-com.svg"
+import bootstrapIcon from "./icons/bootstrap-4-logo-svgrepo-com.svg"
+import typescriptIcon from "./icons/typescript-svgrepo-com.svg"
 import reactIcon from "./icons/react-svgrepo-com.svg"
-// import sassIcon from "./icons/sass-svgrepo-com.svg"
-// import smartphoneIcon from "./icons/smartphone-svgrepo-com.svg"
-// import typescriptIcon from "./icons/typescript-svgrepo-com.svg"
 import vueIcon from "./icons/vue-svgrepo-com.svg"
+import firebaseIcon from "./icons/firebase-svgrepo-com.svg"
+import styledComponentsIcon from "./icons/styled-components-1.svg"
+// import emailtIcon from "./icons/google-gmail-svgrepo-com.svg"
+// import githubIcon from "./icons/github-svgrepo-com.svg"
+// import linkedinIcon from "./icons/linkedin-svgrepo-com.svg"
+// import smartphoneIcon from "./icons/smartphone-svgrepo-com.svg"
+
+
 
 
 
@@ -26,6 +31,49 @@ type ProjectTypes = {
     projectUrl: string,
     id: string,
 }
+
+
+
+
+export const technologiesIcons = [
+    {
+        icon:htmltIcon,
+        name: "HTML"
+    },  {
+        icon:cssIcon,
+        name: "CSS"
+    },  {
+        icon:javascriptIcon,
+        name: "Javascript"
+    },  {
+        icon:gitIcon,
+        name: "Git"
+    },  {
+        icon:sassIcon,
+        name: "Sass/Scss"
+    },  {
+        icon:bootstrapIcon,
+        name: "Bootstrap"
+    }, {
+        icon:styledComponentsIcon,
+        name: "Styled Components"
+    },  {
+        icon:typescriptIcon,
+        name: "Typescript"
+    },  {
+        icon:reactIcon,
+        name: "React"
+    }, {
+        icon:vueIcon,
+        name: "Vue"
+    }, {
+        icon:firebaseIcon,
+        name: "Firebase"
+    }
+]
+
+
+
 
 export const projectData: ProjectTypes[]= [
     {

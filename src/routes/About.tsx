@@ -1,6 +1,7 @@
-import { AboutWrapper, Paragraph, CvButton, AboutPage } from "../styled/About";
+import {AboutWrapper, Paragraph, CvButton, AboutPage, IconWrapper, Icon} from "../styled/About";
 import DownloadIcon from "@mui/icons-material/Download";
 import CV from "../assets/Viktor_Rašev_sk_CV.pdf";
+import {technologiesIcons} from "../assets/ProjectsData.ts"
 
 import { useState } from "react";
 
@@ -17,18 +18,29 @@ const About = () => {
 
     return (
         <AboutPage>
+            <CvButton to={CV} target="_blank" download>
+                <DownloadIcon />
+                <p>Download CV</p>
+            </CvButton>
             <AboutWrapper>
-                <CvButton to={CV} target="_blank" download>
-                    <DownloadIcon />
-                    <p>Download CV</p>
-                </CvButton>
+                <IconWrapper>
+                    {technologiesIcons.map((item, idx) => {
+                        return (
+                            <Icon key={idx}>
+                                <h4>{item.name}</h4>
+                                <img src={item.icon} alt=""/>
+                            </Icon>
+                        )
+                    })}
+                </IconWrapper>
+
                 {parArray.map((item, index) => {
                     return (
                         <div key={index}>
                             {index <= paragraphIndex ? (
                                 <Paragraph
                                     cursor={false}
-                                    speed={90}
+                                    speed={99}
                                     sequence={[`${item}`, () => {
                                         setParagraphIndex((prevIndex) => {
                                             const nextIndex = prevIndex + 1;

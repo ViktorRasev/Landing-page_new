@@ -28,11 +28,11 @@ export const AboutPage = styled.div`
   height: 100%;
   background-image: linear-gradient(to bottom, #2b453d, #344d45, #3c554d, #455e55, #4e665d);
   padding-top: 10rem;
+  font-family: "Cairo", sans-serif;
 `
 
 export const AboutWrapper = styled.div`
   min-height: 100vh;
-  //text-align: center;
   margin: 0 auto;
   padding-bottom:5rem;
   width: 70%;
@@ -42,6 +42,28 @@ export const AboutWrapper = styled.div`
   }
 `;
 
+export const IconWrapper = styled.div`
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  color: #7ed7c2;
+  border-radius: 24px;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+`
+export const Icon = styled.div`
+display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+    & > img {
+      width: 3rem;
+      padding-top: .5rem;
+    }
+    & > h4 {
+      font-size: .8rem;
+    }
+`
 export const CvButton = styled(Link)`
   width: 30%;
   min-width: 200px;
@@ -51,9 +73,9 @@ export const CvButton = styled(Link)`
   align-items: center;
   justify-content: center;
   border-radius: 24px;
-  background-color: #485853;
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  font-family: "Cairo", sans-serif;
+ 
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
@@ -70,14 +92,13 @@ export const CvButton = styled(Link)`
 `;
 
 export const Paragraph = styled(TypeAnimation)`
-  
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 24px;
-  background-color: hsl(162deg 30% 19.61%);
+  background-color: rgba(0, 0, 0, 0.2);
   color: hsl(159.74deg 52.38% 71.18%);
   letter-spacing: 2px;
 
