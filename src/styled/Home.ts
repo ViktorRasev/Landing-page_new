@@ -26,7 +26,7 @@ export const Image = styled.img`
   width: 100%;
   position: relative;
   left: 5%;
-  top: 10%;
+  top: 18%;
   z-index: 3;
   transition: all 0.5s ease-in-out;
 `;
@@ -35,7 +35,6 @@ export const Image = styled.img`
 export const IconWrapper = styled.div`
   position: absolute;
   left: 100%;
-  //right: 100%;
   transition: all 0.3s ease-in-out;
   display: flex;
   > * {
@@ -46,6 +45,7 @@ export const IconWrapper = styled.div`
   }
   @media (max-width: 768px) {
     left: 0;
+    top: -1.3rem;
   }
 
 `;
@@ -83,11 +83,15 @@ export const Card = styled.a<HomeProps>`
     #6ab3d3
   );
   transition: all 0.2s ease-in-out;
+
+  @media(max-width: 768px) {
+    padding-top: 1rem;
+  }
   &:hover {
     transform: translateY(-10px);
     ${Image} {
       transition: all 0.2s ease-in-out;
-      top: 15%;
+      top: 25%;
     }
     ${IconWrapper} {
       left: 0;
@@ -104,7 +108,7 @@ export const ImageMobile = styled.img`
   transform: translateX(-50%);
   z-index: 3;
   transition: all 0.5s ease-in-out;
-`;
+  `;
 
 export const CardMobile = styled.a<HomeProps>`
   background-image: linear-gradient(
