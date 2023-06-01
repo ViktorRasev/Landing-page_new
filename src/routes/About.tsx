@@ -1,4 +1,4 @@
-import {AboutWrapper, Paragraph, CvButton, AboutPage, IconWrapper, Icon} from "../styled/About";
+import {AboutWrapper, Paragraph, CvButton, AboutPage, IconWrapper, Icon, SkillsTitle} from "../styled/About";
 import DownloadIcon from "@mui/icons-material/Download";
 import CV from "../assets/Viktor_Rašev_sk_CV.pdf";
 import {technologiesIcons} from "../assets/ProjectsData.ts"
@@ -23,6 +23,7 @@ const About = () => {
                 <p>Download CV</p>
             </CvButton>
             <AboutWrapper>
+                <SkillsTitle>Skills & Technologies</SkillsTitle>
                 <IconWrapper>
                     {technologiesIcons.map((item, idx) => {
                         return (

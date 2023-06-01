@@ -42,11 +42,16 @@ export const AboutWrapper = styled.div`
   }
 `;
 
+export const SkillsTitle = styled.h2`
+  color: #fff;
+  text-align: center;
+`
+
 export const IconWrapper = styled.div`
   display: flex;
   background-color: rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
-  color: #7ed7c2;
+  color: #fff;
   border-radius: 24px;
   justify-content: space-around;
   margin-bottom: 3rem;
