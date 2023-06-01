@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 
 const moveAnimation = keyframes`
@@ -21,23 +21,27 @@ const moveAnimation = keyframes`
   }
 `;
 
-
-
-
 export const AboutPage = styled.div`
   height: 100%;
-  background-image: linear-gradient(to bottom, #2b453d, #344d45, #3c554d, #455e55, #4e665d);
+  background-image: linear-gradient(
+    to bottom,
+    #2b453d,
+    #344d45,
+    #3c554d,
+    #455e55,
+    #4e665d
+  );
   padding-top: 10rem;
   font-family: "Cairo", sans-serif;
-`
+`;
 
 export const AboutWrapper = styled.div`
   min-height: 100vh;
   margin: 0 auto;
-  padding-bottom:5rem;
+  padding-bottom: 5rem;
   width: 70%;
   font-family: "Cairo", sans-serif;
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     width: 90%;
   }
 `;
@@ -45,7 +49,7 @@ export const AboutWrapper = styled.div`
 export const SkillsTitle = styled.h2`
   color: #fff;
   text-align: center;
-`
+`;
 
 export const IconWrapper = styled.div`
   display: flex;
@@ -55,23 +59,23 @@ export const IconWrapper = styled.div`
   border-radius: 24px;
   justify-content: space-around;
   margin-bottom: 3rem;
-`
+`;
 export const Icon = styled.div`
-display: flex;
+  display: flex;
   padding: 1rem;
   flex-direction: column;
   align-items: center;
-    & > img {
-      width: 3rem;
-      padding-top: .5rem;
-    }
-    & > h4 {
-      font-size: .8rem;
-    }
-`
+  & > img {
+    width: 3rem;
+    padding-top: 0.5rem;
+  }
+  & > h4 {
+    font-size: 0.8rem;
+  }
+`;
 export const CvButton = styled(Link)`
   width: 30%;
-  min-width: 200px;
+  min-width: 280px;
   height: 4rem;
   display: flex;
   margin: 0 auto 3rem auto;
@@ -80,7 +84,7 @@ export const CvButton = styled(Link)`
   border-radius: 24px;
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
- 
+
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
@@ -116,6 +120,3 @@ export const Paragraph = styled(TypeAnimation)`
     font-size: 1rem;
   }
 `;
-
-
-
