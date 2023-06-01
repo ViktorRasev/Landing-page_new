@@ -2,12 +2,11 @@ import styled from "styled-components"
 
 
 export const MainTitleWrapper = styled.div`
-  padding-top: 10rem;
+  padding-top: 8rem;
 `
 
 export const Title = styled.div`
   text-align: center;
-  margin-bottom: 2rem;
   font-family: 'Cairo Play', sans-serif;
   color: #22bcb9;
   letter-spacing: -2px;
@@ -21,9 +20,8 @@ export const Subtitle = styled.div`
   text-align: center;
   font-family: 'Cairo', sans-serif;
   font-weight: 400;
-  font-size: clamp(.8rem, 2vw, 5rem);
-  color: white;
-  padding: 4rem .8rem;
+  font-size: clamp(1rem, 2vw, 5rem);
+  padding: 3rem .8rem;
 
   @keyframes gradientAnimation {
     0% {

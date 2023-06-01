@@ -25,6 +25,9 @@ const Home = () => {
                             <Image src={item.imageDesktop} alt={`Image of ${item.name} for desktop layout`}/>
                         </Card>
                         <CardMobile href={item.projectUrl} target="_blank">
+                            {/*<IconWrapper>{item.usedInProject.map((icon) => {*/}
+                            {/*    return <Icon src={icon} alt=""/>*/}
+                            {/*})}</IconWrapper>*/}
                             <ImageMobile src={item.imageMobile} alt={`Image of ${item.name} for mobile layout`}/>
                         </CardMobile>
                     </Grid>

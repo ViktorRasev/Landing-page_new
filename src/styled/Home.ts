@@ -34,7 +34,8 @@ export const Image = styled.img`
 // ICONS
 export const IconWrapper = styled.div`
   position: absolute;
-  left: -200%;
+  left: 100%;
+  //right: 100%;
   transition: all 0.3s ease-in-out;
   display: flex;
   > * {
@@ -43,6 +44,10 @@ export const IconWrapper = styled.div`
       border-bottom-right-radius: 10px;
     }
   }
+  @media (max-width: 768px) {
+    left: 0;
+  }
+
 `;
 export const CardTitle = styled.div`
   margin-top: 1rem;
@@ -52,7 +57,11 @@ export const CardTitle = styled.div`
 export const Icon = styled.img`
   width: 7%;
   background-color: rgba(33, 33, 33, 0.74);
-  padding: 10px;
+  padding: .8rem;
+  @media (max-width: 768px) {
+    padding: .3rem;
+    width: 2rem;
+  }
 `;
 
 export const Card = styled.a<HomeProps>`
