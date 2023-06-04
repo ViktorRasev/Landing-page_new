@@ -7,7 +7,11 @@
 
 
 html {
-  /*width: 100%;*/
-  /*height: 100%;*/
   background-image: linear-gradient(to bottom, #2b453d, #344d45, #3c554d, #455e55, #4e665d);
+}
+
+/*Footer Icons */
+.social-icon {
+  transform: scale(1.5);
+  color: #dee8e5;
 }
