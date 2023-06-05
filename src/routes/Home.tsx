@@ -20,7 +20,6 @@ const Home = () => {
                                     return <Icon key={idx} src={icon} alt=""/>
                                 })}
                                 </IconWrapper>
-                                {/*<h2>something</h2>*/}
                             </CardTitle>
                             <Image src={item.imageDesktop} alt={`Image of ${item.name} for desktop layout`}/>
                         </Card>

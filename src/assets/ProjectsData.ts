@@ -1,4 +1,4 @@
-import htmltIcon from "./icons/html-5-svgrepo-com.svg";
+import htmlIcon from "./icons/html-5-svgrepo-com.svg";
 import cssIcon from "./icons/css-3-svgrepo-com.svg";
 import javascriptIcon from "./icons/javascript-svgrepo-com.svg";
 import gitIcon from "./icons/git-svgrepo-com.svg";
@@ -9,10 +9,7 @@ import reactIcon from "./icons/react-svgrepo-com.svg";
 import vueIcon from "./icons/vue-svgrepo-com.svg";
 import firebaseIcon from "./icons/firebase-svgrepo-com.svg";
 import styledComponentsIcon from "./icons/styled-components-1.svg";
-// import emailtIcon from "./icons/google-gmail-svgrepo-com.svg"
-// import githubIcon from "./icons/github-svgrepo-com.svg"
-// import linkedinIcon from "./icons/linkedin-svgrepo-com.svg"
-// import smartphoneIcon from "./icons/smartphone-svgrepo-com.svg"
+
 
 type ProjectTypes = {
   name: string;
@@ -31,7 +28,7 @@ type TechnologiesTypes = {
 
 export const technologiesIcons: TechnologiesTypes[] = [
   {
-    icon: htmltIcon,
+    icon: htmlIcon,
     name: "HTML",
   },
   {
@@ -82,7 +79,7 @@ export const projectData: ProjectTypes[] = [
     imageDesktop: "https://i.imgur.com/kK4VWIw.png",
     imageMobile: "https://i.imgur.com/O1GM1eI.png",
     usedInProject: [
-      htmltIcon,
+      htmlIcon,
       cssIcon,
       javascriptIcon,
       reactIcon,
@@ -96,7 +93,7 @@ export const projectData: ProjectTypes[] = [
     name: "Quiz",
     imageDesktop: "https://i.imgur.com/dz3M3zn.png",
     imageMobile: "https://i.imgur.com/yJic1Ah.png",
-    usedInProject: [htmltIcon, cssIcon, javascriptIcon, vueIcon],
+    usedInProject: [htmlIcon, cssIcon, javascriptIcon, vueIcon],
     projectUrl: "https://spontaneous-heliotrope-b7f4af.netlify.app/",
     id: "2",
   },
@@ -104,7 +101,7 @@ export const projectData: ProjectTypes[] = [
     name: "Simple Eshop",
     imageDesktop: "https://i.imgur.com/EH0mGho.png",
     imageMobile: "https://i.imgur.com/wRKBAMU.png",
-    usedInProject: [htmltIcon, cssIcon, javascriptIcon],
+    usedInProject: [htmlIcon, cssIcon, javascriptIcon],
     projectUrl: "https://viktorrasev-simple-eshop.netlify.app/",
     id: "3",
   },
@@ -112,7 +109,7 @@ export const projectData: ProjectTypes[] = [
     name: "Todo List",
     imageDesktop: "https://i.imgur.com/PJoPycg.png",
     imageMobile: "https://i.imgur.com/Nk0BP34.png",
-    usedInProject: [htmltIcon, cssIcon, javascriptIcon],
+    usedInProject: [htmlIcon, cssIcon, javascriptIcon],
     projectUrl: "https://viktorrasev-todolist.netlify.app/",
     id: "4",
   },
