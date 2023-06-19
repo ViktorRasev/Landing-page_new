@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 type HomeProps = {
-  rowdirection?: string;
+  rowDirection?: string;
 };
 
 export const Grid = styled.div<HomeProps>`
@@ -10,7 +10,7 @@ export const Grid = styled.div<HomeProps>`
   margin: 3rem auto;
   display: flex;
   gap: 3rem;
-  flex-direction: ${({ rowdirection }) => rowdirection};
+  flex-direction: ${({ rowDirection }) => rowDirection};
   @media (max-width: 768px) {
     > * {
       margin-bottom: 3rem;
